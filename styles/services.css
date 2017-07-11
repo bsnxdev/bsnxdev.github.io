@@ -1,0 +1,274 @@
+ .anchor:before{
+    display: block; 
+    content: " "; 
+    margin-top: -100px; 
+    height: 100px; 
+    visibility: hidden; 
+ }
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 350px;
+}
+
+#sidebar-wrapper {
+    z-index: 950;
+    position: absolute;
+    /*left: 350px;*/
+    width: 0;
+    height: 100%;
+    margin-left: -375px;
+    overflow-y: auto;
+    background: #999;
+    background-color: #2b0554;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    border-radius:2px;
+}
+
+.sidebar-border{
+    border-style: solid;
+    border-width: 4px;
+    border-color: #f5f4ee;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 350px;
+}
+
+#page-content-wrapper{
+    width: 100%;
+    position: relative;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #f5f4ee;
+    background-color: #ffffff;
+    border-radius:2px;
+    padding: 10px 20px;
+
+}
+
+.photo-title{
+    height: 37px;
+    display: block;
+    font-weight: bold;
+    font-size: 12px;
+    vertical-align: bottom;
+}
+.photo-title em {
+    vertical-align: bottom;
+}
+
+.photo1{
+    width: 120px;
+    height: 110px;
+    display: block;
+    background-image: url(../images/wall-defect.jpg);
+    background-size: 120px;
+    overflow: hidden;
+    border: solid 1px;
+}
+.photo2{
+    width: 120px;
+    height: 110px;
+    display: block;
+    background-image: url(../images/roof-defect.jpg);
+    background-size: 120px;
+    overflow: hidden;
+    border: solid 1px;
+}
+.photo3{
+    width: 120px;
+    height: 110px;
+    display: block;
+    background-image: url(../images/subsidence-defect.jpg);
+    background-size: 170px;
+    overflow: hidden;
+    border: solid 1px;
+}
+.photo4{
+    width: 120px;
+    height: 110px;
+    display: block;
+    background-image: url(../images/damp-defect.jpg);
+    background-size: 150px;
+    overflow: hidden;
+    border: solid 1px;
+}
+.photo5{
+    width: 230px;
+    height: 220px;
+    display: block;
+    background-image: url(../images/farm-house.jpg);
+    background-size: 230px;
+    overflow: hidden;
+    border: solid 1px;
+}
+.photo6{
+    width: 230px;
+    height: 220px;
+    display: block;
+    background-image: url(../images/grand-house.jpg);
+    background-size: 230px;
+    overflow: hidden;
+    border: solid 1px;
+}
+
+.white-box {
+    background-color: #ffffff;
+    border-radius:2px;
+    padding: 10px 20px;
+    /*box-shadow: 0px 1px 4px 1px #888888;*/
+    border-style: solid;
+    border-width: 4px;
+    border-color: #f5f4ee;
+    
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -375px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-dropdown{
+    margin-left: 22px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.sidebar-dropdown-options a {
+    border-top: 1px solid #777;
+}
+
+.sidebar-brand h1{
+    color:#f5f4ee;
+    font-size: 32px;
+}
+
+.sidebar-btn{
+    margin: 15px 0px 15px 0px;
+    position: relative;
+    left: 11px;
+    background-color: #819934;
+}
+
+.sidebar-btn:hover{
+    background-color: #999;
+}
+
+.sidebar-btn text{
+    font-size: 17px;
+    color: #ffffff;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 350px;
+    height: 150%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav h1 {
+    padding: 5px 20px;
+}
+
+.sidebar-nav li {
+    font-weight: 500;
+    font-size: 15px;
+    color: #777;
+}
+
+.sidebar-nav li a {
+    padding: 15px 0px 15px 23px;
+    line-height: 20px;
+    display: block;
+    text-decoration: none;
+    color: #f5f4ee;
+}
+
+.sidebar-nav li~li {
+    border-top: 1px solid #777;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #999;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+.rics-sidebar{
+    margin-left: 9px;
+    width: 90%;
+    height: 60px;
+    display: block;
+    background-image: url(../images/rics.png);
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    border: solid 1px;
+}
+
+@media(min-width:992px) {
+    #wrapper {
+        padding-left: 355px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 340px;
+        height: 800px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+

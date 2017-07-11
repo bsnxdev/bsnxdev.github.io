@@ -1,0 +1,241 @@
+.divlink{
+  /* all rules required to make the whole div clickable */ 
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1;
+  /* this is a fix for IE7-9 */
+  background-color:none;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";  
+  filter: alpha(opacity=0);  
+  opacity:1;  
+}
+
+.jelf-banner-logo{
+	background-image: url(../images/jelf-banner-logo.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 150px;
+}
+
+/* Box Hover Captions */
+
+
+body #boxcaptions{
+	font-family: georgia, serif;
+  	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	color:#f5f4ee;
+	text-align:left;
+
+}
+
+#boxcaptions.col-md-3{
+	padding: 10px 5px;
+
+}
+
+.boxcaption h5{
+	margin-top: 2px;
+	margin-bottom: 15px;
+}
+
+.boxcaption{ 
+	float:left;
+	position: absolute; 
+	width: 100%;
+	padding:6px 8px 0px 8px;
+	margin:0px auto;
+	background:#2b0554;
+	opacity: 0.85;
+	/* For IE 5-7 */
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+	/* For IE 8 (and 9, 10, 11?). Don't miss the added quotes */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+}
+
+.box-caption-image1{
+	background-image: url(../images/boxhovercaptions/caption-survey.jpg);
+	background-position: center top;
+}
+
+.box-caption-image2{
+	background-image: url(../images/boxhovercaptions/caption-listed.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.box-caption-image3{
+	background-image: url(../images/boxhovercaptions/caption-architect.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.box-caption-image4{
+	background-image: url(../images/boxhovercaptions/caption-projects.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.box-caption-image5{
+	background-image: url(../images/boxhovercaptions/caption-land-dev.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.box-caption-image6{
+	background-image: url(../images/boxhovercaptions/caption-further.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.box-caption-image7{
+	background-image: url(../images/boxhovercaptions/caption-portfolio.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.box-caption-image8{
+	background-image: url(../images/ssbg-150x150.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.boxgrid{
+	overflow: hidden; 
+	position: relative;
+	margin: 0px auto;
+	padding: 5px;
+	height: 185px;
+}
+
+.boxgrid-about{
+	float:left; 
+	overflow: hidden; 
+	position: relative;
+	margin:0px auto 8px auto;
+}
+
+.boxgrid-size{
+	
+}
+
+
+.boxgrid-about-size{
+	width: 100%; 
+	height: 350px;
+}
+
+.boxgrid img{ 
+	position: absolute; 
+	top: 0px; 
+	left: 0px; 
+	border: 0px; 
+}
+
+.boxgrid-about img{ 
+	position: absolute; 
+	top: 0px; 
+	left: 0px; 
+	border: 0px; 
+}
+
+ .caption .boxcaption {
+ 	top: 140px; 
+ 	left: 0px;
+}
+
+ .boxgrid-about .boxcaption {
+ 	top: 300px; 
+ 	left: 0px;
+}
+
+
+.orangeline{
+	border-bottom:1px #FFF solid;
+	margin-left:-8px;
+	width:105%;
+	padding-top:7px;
+}
+
+/* Scrolbars */
+/* Tiny Scrollbar 1 */
+#scrollbar1 { width: 100%; margin: 0px 0px 10px;  }
+#scrollbar1 .viewport { width: 100%; height: 260px; overflow: hidden; position: relative;  }
+#scrollbar1 .overview { list-style: none; position: absolute; left: 0; top: 0; padding: 0; margin: 0; padding-bottom:20px; }
+#scrollbar1 .overview ul{ padding: 0px 0px 0px 15px; margin: 0;}
+#scrollbar1 .scrollbar{ background: transparent url(../images/boxhovercaptions/bg-scrollbar-track-y.png) no-repeat 0 0; position: relative; background-position: 0 0; float: right; width: 15px; }
+#scrollbar1 .track { background: transparent url(../images/boxhovercaptions/bg-scrollbar-trackend-y.png) no-repeat 0 100%; height: 100%; width:13px; position: relative; padding: 0 1px; }
+#scrollbar1 .thumb { background: transparent url(../images/boxhovercaptions/bg-scrollbar-thumb-y.png) no-repeat 50% 100%; height: 20px; width: 25px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5px; }
+#scrollbar1 .thumb .end { background: transparent url(../images/boxhovercaptions/bg-scrollbar-thumb-y.png) no-repeat 50% 0; overflow: hidden; height: 5px; width: 25px; }
+#scrollbar1 .disable { display: none; }
+
+
+/* Tiny Scrollbar 2 */
+
+#scrollbar2 { width: 101%; margin: 0px 0px 0px;  }
+#scrollbar2 .viewport { width: 92%; height: 290px; overflow: hidden; position: relative;  }
+#scrollbar2 .overview { list-style: none; position: absolute; left: 0; top: 0; padding: 0; margin: 0; padding-bottom:20px; }
+#scrollbar2 .scrollbar{ background: transparent url(../images/boxhovercaptions/bg-scrollbar-track-y.png) no-repeat 0 0; position: relative; background-position: 0 0; float: right; width: 15px; }
+#scrollbar2 .track { background: transparent url(../images/boxhovercaptions/bg-scrollbar-trackend-y.png) no-repeat 0 100%; height: 100%; width:13px; position: relative; padding: 0 1px; }
+#scrollbar2 .thumb { background: transparent url(../images/boxhovercaptions/bg-scrollbar-thumb-y.png) no-repeat 50% 100%; height: 20px; width: 25px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5px; }
+#scrollbar2 .thumb .end { background: transparent url(../images/boxhovercaptions/bg-scrollbar-thumb-y.png) no-repeat 50% 0; overflow: hidden; height: 5px; width: 25px; }
+#scrollbar2 .disable { display: none; }
+
+/* Tiny Scrollbar 3 */
+
+#scrollbar3 { width: 101%; margin: 0px 0px 0px;  }
+#scrollbar3 .viewport { width: 92%; height: 290px; overflow: hidden; position: relative;  }
+#scrollbar3 .overview { list-style: none; position: absolute; left: 0; top: 0; padding: 0; margin: 0; padding-bottom:20px; }
+#scrollbar3 .scrollbar{ background: transparent url(../images/boxhovercaptions/bg-scrollbar-track-y.png) no-repeat 0 0; position: relative; background-position: 0 0; float: right; width: 15px; }
+#scrollbar3 .track { background: transparent url(../images/boxhovercaptions/bg-scrollbar-trackend-y.png) no-repeat 0 100%; height: 100%; width:13px; position: relative; padding: 0 1px; }
+#scrollbar3 .thumb { background: transparent url(../images/boxhovercaptions/bg-scrollbar-thumb-y.png) no-repeat 50% 100%; height: 20px; width: 25px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5px; }
+#scrollbar3 .thumb .end { background: transparent url(../images/boxhovercaptions/bg-scrollbar-thumb-y.png) no-repeat 50% 0; overflow: hidden; height: 5px; width: 25px; }
+#scrollbar3 .disable { display: none; }
+
+/* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+	}
+
+    }
+
+    @media screen and (min-width: 768px) {
+
+	}
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+	}
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+        
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 768px) and (max-width : 991px) {
+        .boxgrid{
+        float: left;
+        width: 47%; 
+        height: 185px;
+        margin: 10px;
+        }
+        #boxcaptions.col-md-3{
+		padding:0px;
+		}
+	}
