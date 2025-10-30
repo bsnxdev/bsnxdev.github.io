@@ -92,7 +92,7 @@
     width: 120px;
     height: 110px;
     display: block;
-    background-image: url(../images/subsidence-defect.jpg);
+    background-image: url(../images/chimney-defect.jpg);
     background-size: 170px;
     overflow: hidden;
     border: solid 1px;
@@ -101,7 +101,6 @@
     width: 120px;
     height: 110px;
     display: block;
-    background-image: url(../images/damp-defect.jpg);
     background-size: 150px;
     overflow: hidden;
     border: solid 1px;
